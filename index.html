@@ -4,10 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>odin-recipes</title>
+
     <!-- Internal way of inseting CSS in HTML where they are put in header with style element-->
+
     <style>
         h1 {color: brown;}
         p {color: rgb(78, 131, 217);}
+
+        .click,.no { font-size: 28px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .click {
+            color: white;
+            background-color: black;
+        }
+        .no {
+            color: black;
+            background-color: yellow;
+        }
+
+        div p{
+            background-color: yellow;
+            color: red;
+        }
     </style>
 </head>
 
@@ -24,6 +43,14 @@
         <li><a href="C:\Users\Buzzclan\Desktop\odin-recipes\lasagna.html"> Lasagna Recipe</a></li>
         <li><a href="C:\Users\Buzzclan\Desktop\odin-recipes\Somali Spaghetti Sauce.html">Somali Spaghetti Sauce</a></li>
 </ol>
+
+<div>
+    <p>I'm applying the descendant combinator here</p>
+    <h6>here it should not applied</h6>
+    <p>here again the style needs to be applied</p>
+</div>
+ <button class="click">Click Me!</button>
+ <button class="no">No, Click Me!</button>
 </body>
 </html>
 
